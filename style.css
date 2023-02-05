@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: #fff;
+  border-radius: 10px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 45px;
+  gap: 20px;
+  text-align: center;
+}
+header {
+  display: inline-block;
+}
+.logo {
+  width: 200px;
+}
+header h3 {
+  font-size: 19px;
+  color: #ff4b2b;
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #ff4b2b;
+  padding: 10px;
+  width: 300px;
+  font-weight: 500;
+  transition: all 0.3 ease-in-out;
+  border-radius: 10px;
+  box-shadow: 5px 5px whitesmoke;
+}
+main a:hover {
+  transform: rotateY(-15deg);
+}
+@media (max-width: 467px) {
+  section {
+    width: 90%;
+    padding: 30px;
+  }
+}
+@media (max-width: 325px) {
+  main a {
+    width: 250px;
+  }
+}
